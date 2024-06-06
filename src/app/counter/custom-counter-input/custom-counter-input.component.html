@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-12 text-center">
+        <div class="input-group mb-3">
+            <input type="number" [(ngModel)]="incrementCount" name="incrementCount" class="form-control" placeholder="Enter value">
+            <button class="btn btn-primary" (click)="onCustomIncrement()">Custom Increment</button>
+        </div>
+        <br>
+        <!-- 3rd Efficient way to get Data from SELECTOR, Standard Subscribe Method and Standard String Variable -->
+        <h3>Channel Name :- {{ channelName }}</h3>
+
+        <!-- 4th Efficent way to et data from SELECTOR, Observable Variable and asyn Pipe in HTML -->
+        <!-- <h3>Channel Name :- {{ channelName$ | async }}</h3> -->
+
+        <div class="input-group mb-3">
+            <input type="text" [(ngModel)]="newChannelName" name="newChannelName" class="form-control" placeholder="New Channel Name">
+            <button class="btn btn-primary" (click)="modifieChannelName()">Update</button>
+        </div>
+    </div>
+</div>
